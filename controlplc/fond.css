@@ -1,0 +1,222 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("fnd.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    text-align: center;
+    color: blanchedalmond;
+    text-shadow: 0px 2px rgb(25, 129, 167);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+
+.card {
+    position: relative;
+
+    width: 420px;
+    max-width: calc(100% - 30px);
+    min-height: 350px;
+
+    background: #172033;
+    padding: 30px;
+    border-radius: 20px;
+
+    text-align: center;
+    box-shadow: 0 10px 40px #0005;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.card p {
+    margin: 0;
+    text-align: center;
+    bottom: 0%;
+    transform: translateY(-20px);
+}
+
+.card .connect {
+    position: static;
+
+    width: 300px;
+    max-width: 100%;
+    height: 50px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    background-color: rgb(18, 206, 71);
+    border: 2px solid aqua;
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+.connect:hover {
+    font-weight: bold;
+    background: #17e410;
+    color: black;
+
+    box-shadow:
+        0 0 5px #1ef117,
+        0 0 10px #17e410,
+        0 0 20px #17e410;
+}
+
+
+#ip {
+    width: 230px;
+    max-width: 100%;
+    height: 40px;
+
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+#status {
+    margin: 0;
+    color: aquamarine;
+    text-align: center;
+    transform: translateY(10px);
+}
+
+#viscabarca {
+    display: none;
+    position: fixed;
+    left: 10px;
+    top: 30px;
+    height: 250px;
+}
+
+.motor {
+    display: none;
+    position:relative;
+    transform: translateX(center);
+
+    border-top-left-radius: 125px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 125px;
+
+    height: 500px;
+    width: 500px;
+
+    background-color: #0d1297;
+
+    box-shadow:
+        0 0 12px violet,
+        0 0 20px violet,
+        0 0 30px violet;
+
+    transform: scale(1.1);
+    text-align: center;
+}
+
+thead th {
+    transform: translateX(-10px);
+    padding-left: 1px;
+}
+
+tbody {
+    transform: translateX(-10px);
+}
+
+tbody td {
+    padding: 10px 6px;
+}
+
+#lh  { 
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+bottom: 19%;;
+transform: translateX(center);
+height: 45px;
+    background-color: #17e410;
+    border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+#lh:hover {
+    
+    background-color: red;
+    font-weight: bold;
+   transform: scale(1.1);
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+#INT {
+    display: none;
+
+    box-shadow: 0 0 120px #10b8ad;
+    width: 410px;
+
+    background-color: #10b8adeb;
+
+    position: fixed;
+    right: 15px;
+    top: 400px;
+
+    border-radius: 10px;
+}
+
+#nm {
+    font-weight: bold;
+    font-size: 25px;
+    animation: rgb 3s infinite;
+}
+
+@keyframes rgb {
+    0% {
+        color: red;
+        text-shadow: 0 0 20px blue;
+    }
+
+    33% {
+        color: blue;
+        text-shadow: 0 0 20px red;
+    }
+
+    66% {
+        color: blue;
+        text-shadow: 0 0 20px red;
+    }
+
+    100% {
+        color: red;
+        text-shadow: 0 0 20px blue;
+    }
+}
+
+#gr {
+    color: #172033;
+}

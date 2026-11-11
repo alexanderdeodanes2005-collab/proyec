@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="fond.css">
+    <script src="stye.js" defer></script>
+
+    <title>LOGOSOFT</title>
+</head>
+
+<body>
+
+    <div class="card" id="login">
+
+        <h1>CONTROLADOR DE PLC CON ESP32</h1>
+
+        <p>Vincula tu dispositivo para continuar</p>
+
+        <input id="ip" placeholder="IP del ESP32">
+
+        <button class="connect" onclick="conectar()">
+            VINCULAR DISPOSITIVO
+        </button>
+
+        <p id="status">Desconectado</p>
+
+    </div>
+
+    <div class="panel-layout">
+
+        <img
+            src="Emblema_neón_del_Complejo_Nuestra_Señora_de_la_Paz-removebg-preview.png"
+            id="viscabarca"
+        >
+
+        <div class="motor">
+
+            <h2>ESTADO DEL MOTOR</h2>
+
+            <h3 id="Motor">MOTOR DESCONECTADO</h3>
+
+            <h2>Historial</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>ESTADO</th>
+                    </tr>
+                </thead>
+
+                <tbody id="historialMotor">
+                </tbody>
+
+            </table>
+
+           
+
+        </div>
+
+        <div id="INT">
+
+            <h1 id="gr">INTEGRANTES DE GRUPO</h1>
+
+            <h1 id="nm">
+                JAIRO ALEXANDER DEODANES<br>
+                DAVID OSWALDO JUÁREZ REYES<br>
+                GEOVANNI ALEJANDRO MARROQUÍN MARTÍNEZ<br>
+                JOSÉ ARMANDO LOBOS DELGADO
+            </h1>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+            <tbody id="historialMotor">    </tbody>
+<button id="lh" onclick="limpiarHistorial()">
+   BORRAR HISTORIAL
+</button>
+        </table>
+
+    </div>
+
+</body>
+</html>
